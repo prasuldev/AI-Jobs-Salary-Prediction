@@ -1,0 +1,84 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2868
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 # AI Jobs Salary Prediction (2025\'962026)\
+\
+## Project Overview\
+\
+This project analyzes the AI job market dataset for the years 2025\'962026 and builds a machine learning model to predict salaries based on job-related features.\
+\
+The dataset contains information about job roles, experience levels, company size, industry, and country.\
+\
+The goal of this project is to explore patterns in the AI job market and create a predictive model that estimates salaries using machine learning techniques.\
+\
+---\
+\
+## Problem Type\
+\
+Supervised Machine Learning\
+\
+Category: **Regression**\
+\
+Why regression?\
+\
+Because the model predicts a **numeric value (salary)** instead of a category.\
+\
+---\
+\
+## Dataset Features\
+\
+The dataset includes features such as:\
+\
+- Job Title\
+- Experience Level\
+- Company Size\
+- Industry\
+- Country\
+- Remote Work Type\
+\
+These features help the model understand patterns that influence salaries in the AI job market.\
+\
+---\
+\
+## Model Used\
+\
+Random Forest Regressor\
+\
+Random Forest is an ensemble learning algorithm that combines multiple decision trees to improve prediction accuracy.\
+\
+Advantages:\
+- Handles complex relationships\
+- Reduces overfitting\
+- Good performance on structured datasets\
+\
+---\
+\
+## Evaluation Metrics\
+\
+The model performance is evaluated using the following regression metrics:\
+\
+**Mean Absolute Error (MAE)**  \
+Measures the average difference between predicted and actual values.\
+\
+**Mean Squared Error (MSE)**  \
+Measures the squared differences between predictions and real values.\
+\
+**R\'b2 Score**  \
+Shows how well the model explains the variance in the data.\
+\
+Example code:\
+\
+```python\
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score\
+\
+mae = mean_absolute_error(y_test, predictions)\
+mse = mean_squared_error(y_test, predictions)\
+r2 = r2_score(y_test, predictions)\
+\
+print("Mean Absolute Error:", mae)\
+print("Mean Squared Error:", mse)\
+print("R2 Score:", r2)}
